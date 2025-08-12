@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FAF7F3;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #3f1c50;
+    color: #992222;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #854e85 3px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: center; /* bikin nav berada di tengah */
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* reset list dasar */
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* spasi antar menu */
+    padding: 0;
+    margin: 0;
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: #d499d9;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #fff;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Bagian Tentang dan Layanan */
+section {
+    padding: 60px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about-image img{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0, 2);
+}
+
+.about-text{
+    flex: 1;
+}
+
+.about-text h3{
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.about-text P{
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.experiences-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.experiences-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.experiences-item img {
+    max-width: 100%;
+    height: auto;
+    width: 250px; 
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.footer-bottom{
+    background-color: #854e85;
+    color: white;
+    text-align: center;
+}
+
+/* reponsif untuk layar kecil*/
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding-top: 10px;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .experiences-list {
+        flex-direction: column;
+    }
+}
+
+/* Contact Section */
+#contact {
+    background-color: #FAF7F3;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #D9A299;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #D9A299;
+    color: #FAF7F3;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #c5867d;
+}
+
+/* Responsif untuk Contact Section */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
